@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TIPOS DE ENTRADA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--<script src='main.js'></script>-->
+</head>
+<body bgcolor="silver">
+    <h1 align="center",>TIPOS DE ENTRADA</h1>
+    <hr color="black">
+    <p>
+        <h2>Entrada tipo Texto Input.</h2>
+        <div class="entrada_tipo_texto" id="tipo_texto">
+        <label for="input1"><b>Input tipo Texto</b></label> <br>   
+        <input type="text" inputmode="input1" name="input1">
+        </div><br>Caja para ingresar texto.
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada Tipo Correo</h2>
+        <div class="entrada_tipo-correo" id="tipo_correo">
+            <label for="correo1"><b>Tipo de Input Correo Electronico.</b></label><br>
+            <input type="correo" id="correo1" name="correo1"><br>Input de correo<br> valida que la información<br> dentro del input tenga un formato<br> de correo.
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de Tipo Numero Telefonico.</h2>
+        <div class="input_tipo_telefono">
+            <label for="numero_telefono"><b>Input de Tipo Telefono.</b></label><br>
+            <input type="number" id="numero_telefono" name="numero_telefono"><br>El input de teléfono<br> valida que únicamente<br> puedas ingresar 10 dígitos,<br>por medio del maxlength="10".
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de tipo URL</h2>
+        <div class="input_tipo_url" id="tipo_url">
+            <label for="url_1"><b>Input de tipo URL.</b></label><br>
+            <input type="url" id="url_1" name="url_1"><br>Valida que la URL<br> tenga ciertas características,<br> identifica que sea una URL válida. 
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de tipo Contraseña</h2>
+        <div class="entrada_tipo_pasword" id="tipo_pasword">
+            <label for="psw1"><b>Input de Password</b></label><br>
+            <input type="password" id="psw1" name="psw1"><br>Valida el texto<br> que se ingrese<br> como una contraseña.
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de Tipo Seleccion Multiple</h2>
+        <div class="entrada_tipo_seleccionM" id="tipo_SM">
+            <label><b>Input tipo Seleccion Multiple.</b></label><br>
+            <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+            <label for="topping1">Tacos de Suadero.</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+            <label for="topping2">Tacos de Surtida.</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+            <label for="topping3">Tacos de Tripa.</label><br><br>En este tipo de input<br> se pueden crear varias casillas<br>tipo checkbox.
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de Tipo Selección Unica</h2>
+        <div class="tipo_seleccion_unica" id="selcc_unica">
+            <label><b>Input de tipo Selección Unica.</b></label><br>
+            <input type="radio" id="roja" name="salsas" value="Roja">
+            <label for="roja">Buena</label><br>
+            <input type="radio" id="verde" name="salsas" value="Verde">
+            <label for="verde">Mala</label><br>
+            <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+            <label for="guacamole">Muy Mala</label><br><br>Este tipo de input<br> sirve para crear varias opciones<br>con solo una posible<br> seleccion por parte del usuario.
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de Tipo Select</h2>
+        <div class="entrada_tipo_select" id="tipo_select">
+            <label><b>Input de tipo Selección</b></label><br>
+            <label for="emocion">¿Como te sientes hoy?</label>
+            <select id="emocion" name="emocion">
+            <option value="Feliz">Feliz</option>
+            <option value="Enojado">Enojado</option>
+            <option value="Triste">Triste</option>
+            <option value="Inquieto">Inquieto</option>
+            </select><br><br>Este tipo de input<br>sirve para generar por defecto<br> opciones a elegir para el usuario.
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de Tipo Select con Input</h2>
+        <div class="entrada_tipo_select&input" id="select_input">
+            <label><b>Input & Select</b></label><br>
+            <label for="refresco">Elige tu refresco favorito</label><br>
+            <input list="refresco">
+            <datalist id="refresco">
+             <option value="Coca-Cola">
+             <option value="Manzana">
+             <option value="Naranja">
+             <option value="Mango">
+             <option value="Guayaba">
+            </datalist>
+            <br><br>En este tipo de input<br>se puede tener la opcion<br>de escribir o seleccionar<br> alguna de las sugerencias.
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de tipo Fecha</h2>
+        <div class="entrada_tipo_fecha" id="tipo_fecha">
+            <label><b>Input de tipo Fecha.</b></label><br>
+            <label for="fecha1">Fecha:</label><br>
+            <input type="date" id="fecha1" name="fecha1"><br>
+            <label for="fecha2">Zona:</label><br>
+            <input type="datetime-local" id="fecha2" name="fecha2"><br>
+            <label for="fecha3">Dia de la Semana:</label><br>
+            <input type="week" id="fecha3" name="fecha3"><br>
+            <label for="fecha4">Hora:</label><br>
+            <input type="time" id="fecha4" name="fecha4"><br>
+            <label for="fecha5">Mese:</label><br>
+            <input type="month" id="fecha5" name="fecha5"><br><br>
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de Tipo Archivo.</h2>
+        <div class="entrada_tipo_archivo" id="tipo_archivo">
+            <label><b>Input de tipo Archivo.</b></label><br>
+            <input type="file" id="archivo1" name="archivo1" multiple><br><br>Este tipo de input<br> se utiliza para<br> seleccionar y subir archivos.
+
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de tipo Color</h2>
+        <div class="entrada_tipo_color" id="tipo_colo">
+            <label>Input de tipo Color</label><br>
+            <input type="color" id="color1" name="color1"><br><br>
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Entrada de tipo Boton.</h2>
+        <div class="entrada_tipo_boton" id="tipo_boton">
+            <label><b>Input de tipo Boton</b></label><br>
+            <input type="reset"><br>
+            <input type="submit"><br>
+            <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Hola DEV');"><br><br>Este tipo de input<br> sirve para agregar botones.
+        </div>
+    </p>
+    <hr color="red">
+    <p>
+        <h2>Ejemplo de formulario</h2><br>
+        <!-- Formularios -->
+
+    <div class="formulario" id="formulario">
+
+     <label><b>Ingresa tus datos</b></label>
+        <!-- Formularios -->
+     <form action="/accion.js"  id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" form="form1"><br>
+        <hr size="2px", color="blue", width="220px", align="left">
+        <input type="submit" value="Submit", onclick="alert('¡Bienbenido Dev!.');">
+        <input type="reset">
+     </form>
+
+    </div>
+    </p>
+
+</body>
+</html>
