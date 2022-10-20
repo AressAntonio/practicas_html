@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACOS "PA'LA CRUDA"&reg;</title>
+</head>
+<header>
+    <h1>TACOS "PA' LA CRUDA"</h1>
+</header>
+<img src="./assets/logo_tacos.png"></img>
+<section>
+    <h2>Menu</h2>
+    <h3>Tacos Tradicionales</h3>
+        <ul>
+            <li>Tacos de Suadero.............$15</li>
+            <li>Tacos de Surtida.............$15</li>
+            <li>Tacos de Tripa...............$15</li>
+        </ul>
+
+    <h3>Tacos Especiales</h3>
+        <ul>
+            <li>Tacos de Texano.............$20</li>
+            <li>Tacos de Cubano.............$20</li>
+            <li>Tacos de Regio...............$20</li>
+        </ul>
+
+    <h3>Tacos Jumbo</h3>
+        <dl>
+            <dt>Taco Jumbo Tradicional.........$50</dt>
+            <dd>Taco Jumbo Regio..............$50</dd>
+            <dd>Taco Jumbo Texano..............$50</dd>
+        </dl>
+
+</section>
+
+<hr color="red">
+
+<section>
+    <h2>Ubicacion</h2>
+    <h3>Sucursales.</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Zona Centro</td>
+                <td><a href="https://goo.gl/maps/wZkHnEsqnLBvMpC3A" target="_blank">Petén 248 y, Av. Universidad, Narvarte Poniente.</a></td>
+                <td>Lunes a Domingo de 12pm a 2:00am</td>
+            </tr>
+            <tr>
+                <td>Zona Norte</td>
+                <td><a href="https://goo.gl/maps/xYx8AwzC6rMyZVwBA" target="_blank">Lorenzo Boturini 4354, Aeronáutica Militar.</a></td>
+                <td>Lunes a Domingo de 10am a 12:00am</td>
+            </tr>
+            <tr>
+                <td>Zona Sur</td>
+                <td><a href="https://goo.gl/maps/LZJdGF9hgwoS8PJ59" target="_blank">Calle de Bolívar 57, Centro Histórico de la Cdad. de México.</a></td>
+                <td>Martes a Domingo de 2pm a 3:00am</td>
+            </tr>
+
+        </table>
+</section>
+
+
+<hr color="red">
+
+<section>
+    <h2>Pedidos</h2>
+    <h3><b>Realiza tus pedidos</b></h3>
+        <form action="">
+            <P>Selecciona tu taqueria.</P>
+            <select>
+                <option value="Norte">Norte</option>
+                <option value="Centro">Centro</option>
+                <option value="Sur">Sur</option>
+            </select>
+
+            <hr color="red">
+
+            <p>¿Cual es tu pedido?</p>
+            <input type="checkbox" id="Texano" name="Texano" value="Texano">
+            <label for="Texano">Taco Texano</label>
+            <input type="number" id="Texano_number" name="Texano_number" placeholder="¿Cuantos tacos?"><br> 
+
+            <input type="checkbox" id="Cubano" name="Cubano" value="Cubano">
+            <label for="Cubano">Taco Cubano</label>
+            <input type="number" id="Cubano_number" name="Cubano_number" placeholder="¿Cuantos tacos?"><br>
+
+            <input type="checkbox" id="Regio" name="Regio" value="Regio">
+            <label for="Regio">Taco Regio</label>
+            <input type="number" id="Regio_number" name="Regio_number" placeholder="¿Cuantos tacos?"><br>
+            <br>
+            <p>Ingresa tus datos</p>
+            <lavel for="nombre">Nombre: </lavel><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre(s)"><br>
+            <label for="telefono">Numero de contacto:</label><br>
+            <input type="text" id="telefono" name="telefono" placeholder="¿Cual es tu numero de contacto?"><br>
+            <label for="direccion">Tu direccion:</label><br>
+            <input type="text" id="direccion" name="direccion" placeholder="¿A donde lo llevamos?"><br><br>
+
+            <input type="submit" value="Submit", onclick="alert('¡Gracias por tu compra!.');">
+            <input type="reset">
+
+
+            
+
+
+            
+        </form>
+</section>
+
+
+<body>
+</body>
+
+</html>
